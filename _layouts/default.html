@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "pt" }}">
+
+  {%- include head.html -%}
+
+  <body 
+        {% if page.url== "/" %}
+            id="homepage"
+        {% endif %}
+        >
+    
+      {{ content }}
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
